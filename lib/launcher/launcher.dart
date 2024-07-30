@@ -92,15 +92,15 @@ class _LauncherPageState extends State<LauncherPage> {
       // ignore: use_build_context_synchronously
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Permission Required'),
+        title: const Text('Izin Diperlukan'),
         content: const Text(
-            'This app needs storage permissions to function properly. Please grant the permissions in the system settings.'),
+            'Aplikasi ini memerlukan izin penyimpanan agar berfungsi dengan baik. Harap berikan izin di pengaturan sistem.'),
         actions: [
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: const Text('Cancel'),
+            child: const Text('Batal'),
           ),
           TextButton(
             onPressed: () async {
@@ -118,7 +118,7 @@ class _LauncherPageState extends State<LauncherPage> {
               // openAppSettings();
               Navigator.of(context).pop();
             },
-            child: const Text('Open Settings'),
+            child: const Text('Buka Pengaturan'),
           ),
         ],
       ),
